@@ -7,5 +7,18 @@
 и депозитарного калькуляторов. Программа реализована на языке С++ с использованием 
 QT
 
+Для сборки используются make и cmake.
+
+makefile содержит цели\
+`install`\
+`uninstall`\
+`tests`\
+`gcov_report`\
+`dist`\
+`dvi`\
+`run` - запуск установленного приложения\
+`linter` - требуется clang-format\
+`clean`
+
 ### TODO list
 Fix date in test
