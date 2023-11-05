@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource>
+        <file>backspace_icon.png</file>
+        <file>delete_icon.png</file>
+    </qresource>
+</RCC>

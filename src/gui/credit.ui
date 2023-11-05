@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Credit</class>
+    <widget class="QMainWindow" name="Credit">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>344</width>
+                <height>426</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string/>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QFormLayout" name="formLayout_2">
+                <item row="0" column="0" colspan="2">
+                    <layout class="QFormLayout" name="formLayout">
+                        <item row="0" column="0">
+                            <widget class="QRadioButton" name="annuity">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Annuity</string>
+                                </property>
+                                <property name="checked">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="0" column="1">
+                            <widget class="QRadioButton" name="diff">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Differentiated</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="1" column="0">
+                            <widget class="QLabel" name="label">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Loan Amount</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="1" column="1">
+                            <widget class="QDoubleSpinBox" name="loan">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="baseSize">
+                                    <size>
+                                        <width>0</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="minimum">
+                                    <double>1.000000000000000</double>
+                                </property>
+                                <property name="maximum">
+                                    <double>1000000000000.000000000000000</double>
+                                </property>
+                                <property name="value">
+                                    <double>300000.000000000000000</double>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="2" column="0">
+                            <widget class="QLabel" name="label_2">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Loan Term</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="2" column="1">
+                            <widget class="QSpinBox" name="term">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="suffix">
+                                    <string>months</string>
+                                </property>
+                                <property name="prefix">
+                                    <string/>
+                                </property>
+                                <property name="minimum">
+                                    <number>1</number>
+                                </property>
+                                <property name="maximum">
+                                    <number>650</number>
+                                </property>
+                                <property name="value">
+                                    <number>6</number>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="3" column="0">
+                            <widget class="QLabel" name="label_3">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Interest Rate</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="3" column="1">
+                            <widget class="QDoubleSpinBox" name="rate">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="suffix">
+                                    <string>%</string>
+                                </property>
+                                <property name="decimals">
+                                    <number>2</number>
+                                </property>
+                                <property name="value">
+                                    <double>6.000000000000000</double>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="4" column="0">
+                            <widget class="QPushButton" name="calculate">
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Calculate</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="5" column="0" colspan="2">
+                            <widget class="Line" name="line">
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                    </font>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Qt::Horizontal</enum>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="6" column="0">
+                            <widget class="QLabel" name="label_4">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Total payment</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="6" column="1">
+                            <widget class="QLabel" name="total">
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>-</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="7" column="0">
+                            <widget class="QLabel" name="label_6">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Overpayment</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="7" column="1">
+                            <widget class="QLabel" name="overpayment">
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>-</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="8" column="0" colspan="2">
+                            <widget class="QLabel" name="label_8">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>13</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Month payment</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="9" column="0" colspan="2">
+                            <widget class="QTableWidget" name="month_payment">
+                                <property name="enabled">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                    </font>
+                                </property>
+                                <property name="sizeAdjustPolicy">
+                                    <enum>QAbstractScrollArea::AdjustToContents</enum>
+                                </property>
+                                <property name="editTriggers">
+                                    <set>QAbstractItemView::NoEditTriggers</set>
+                                </property>
+                                <property name="dragDropOverwriteMode">
+                                    <bool>false</bool>
+                                </property>
+                                <property name="textElideMode">
+                                    <enum>Qt::ElideMiddle</enum>
+                                </property>
+                                <property name="showGrid">
+                                    <bool>false</bool>
+                                </property>
+                                <attribute name="horizontalHeaderVisible">
+                                    <bool>true</bool>
+                                </attribute>
+                                <attribute name="horizontalHeaderCascadingSectionResizes">
+                                    <bool>true</bool>
+                                </attribute>
+                                <attribute name="horizontalHeaderMinimumSectionSize">
+                                    <number>75</number>
+                                </attribute>
+                                <attribute name="horizontalHeaderDefaultSectionSize">
+                                    <number>146</number>
+                                </attribute>
+                                <attribute name="horizontalHeaderStretchLastSection">
+                                    <bool>true</bool>
+                                </attribute>
+                                <attribute name="verticalHeaderVisible">
+                                    <bool>false</bool>
+                                </attribute>
+                                <column>
+                                    <property name="text">
+                                        <string>Month</string>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>13</pointsize>
+                                        </font>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>Payment</string>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>13</pointsize>
+                                        </font>
+                                    </property>
+                                </column>
+                            </widget>
+                        </item>
+                    </layout>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>344</width>
+                    <height>25</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>13</pointsize>
+                </font>
+            </property>
+            <widget class="QMenu" name="menuCalculator">
+                <property name="font">
+                    <font>
+                        <pointsize>13</pointsize>
+                    </font>
+                </property>
+                <property name="title">
+                    <string>Calculator</string>
+                </property>
+                <addaction name="actionBasic"/>
+                <addaction name="actionDeposit"/>
+            </widget>
+            <addaction name="menuCalculator"/>
+        </widget>
+        <action name="actionBasic">
+            <property name="text">
+                <string>Basic</string>
+            </property>
+            <property name="font">
+                <font>
+                    <family>Sans Serif</family>
+                    <pointsize>13</pointsize>
+                </font>
+            </property>
+        </action>
+        <action name="actionDeposit">
+            <property name="text">
+                <string>Deposit</string>
+            </property>
+            <property name="font">
+                <font>
+                    <family>Sans Serif</family>
+                    <pointsize>13</pointsize>
+                </font>
+            </property>
+        </action>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

@@ -1,0 +1,1150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Calculator</class>
+    <widget class="QMainWindow" name="Calculator">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>720</width>
+                <height>544</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string notr="true"/>
+        </property>
+        <property name="toolTip">
+            <string notr="true"/>
+        </property>
+        <property name="statusTip">
+            <string notr="true"/>
+        </property>
+        <property name="whatsThis">
+            <string notr="true"/>
+        </property>
+        <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonIconOnly</enum>
+        </property>
+        <widget class="QWidget" name="centralWidget">
+            <layout class="QGridLayout" name="gridLayout">
+                <item row="0" column="0">
+                    <layout class="QGridLayout" name="gridLayout_2">
+                        <property name="sizeConstraint">
+                            <enum>QLayout::SetFixedSize</enum>
+                        </property>
+                        <item row="2" column="5">
+                            <widget class="QPushButton" name="Button_c">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>C</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="6" column="4">
+                            <widget class="QPushButton" name="Button_6">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                    <string>6</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>6</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="8" column="3">
+                            <widget class="QPushButton" name="Button_0">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="tabletTracking">
+                                    <bool>false</bool>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                    <string>0</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>0</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="5" column="2">
+                            <widget class="QPushButton" name="Button_7">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                    <string>7</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>7</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="7" column="4">
+                            <widget class="QPushButton" name="Button_3">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                    <string>3</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>3</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="4" column="3">
+                            <widget class="QPushButton" name="Button_e">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="whatsThis">
+                                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                </property>
+                                <property name="text">
+                                    <string>10 ^ y</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="5" column="0">
+                            <widget class="QPushButton" name="Button_cos">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>cos</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="5" column="5">
+                            <widget class="QPushButton" name="Button_mult">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>*</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>*</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="8" column="4">
+                            <widget class="QPushButton" name="Button_point">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                    <string>.</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>.</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="8" column="1">
+                            <widget class="QPushButton" name="Button_mod">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>mod</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="7" column="2">
+                            <widget class="QPushButton" name="Button_1">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                    <string>1</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>1</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="5" column="3">
+                            <widget class="QPushButton" name="Button_8">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                    <string>8</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>8</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="7" column="5">
+                            <widget class="QPushButton" name="Button_plus">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>+</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>+</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="5" column="4">
+                            <widget class="QPushButton" name="Button_9">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                    <string>9</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>9</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="8" column="2">
+                            <widget class="QPushButton" name="Button_p">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                    <string>()</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="5" column="1">
+                            <widget class="QPushButton" name="Button_acos">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>acos</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="4" column="1">
+                            <widget class="QPushButton" name="Button_asin">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>asin</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="6" column="2">
+                            <widget class="QPushButton" name="Button_4">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                    <string>4</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>4</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="7" column="3">
+                            <widget class="QPushButton" name="Button_2">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                    <string>2</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>2</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="0" column="0" colspan="6">
+                            <widget class="QLineEdit" name="lineEdit">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>20</horstretch>
+                                        <verstretch>20</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>10000000</width>
+                                        <height>100</height>
+                                    </size>
+                                </property>
+                                <property name="sizeIncrement">
+                                    <size>
+                                        <width>0</width>
+                                        <height>10</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Ubuntu</family>
+                                        <pointsize>30</pointsize>
+                                        <italic>false</italic>
+                                        <bold>false</bold>
+                                    </font>
+                                </property>
+                                <property name="acceptDrops">
+                                    <bool>false</bool>
+                                </property>
+                                <property name="toolTip">
+                                    <string notr="true"/>
+                                </property>
+                                <property name="statusTip">
+                                    <string notr="true"/>
+                                </property>
+                                <property name="whatsThis">
+                                    <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                </property>
+                                <property name="accessibleName">
+                                    <string notr="true"/>
+                                </property>
+                                <property name="accessibleDescription">
+                                    <string notr="true"/>
+                                </property>
+                                <property name="autoFillBackground">
+                                    <bool>false</bool>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">font: 75 30pt &quot;Ubuntu&quot;;</string>
+                                </property>
+                                <property name="inputMask">
+                                    <string notr="true"/>
+                                </property>
+                                <property name="text">
+                                    <string notr="true">0</string>
+                                </property>
+                                <property name="maxLength">
+                                    <number>255</number>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                </property>
+                                <property name="readOnly">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="placeholderText">
+                                    <string notr="true"/>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="6" column="1">
+                            <widget class="QPushButton" name="Button_atan">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>atan</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="4" column="0">
+                            <widget class="QPushButton" name="Button_sin">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>sin</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="4" column="5">
+                            <widget class="QPushButton" name="Button_div">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>/</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>/</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="8" column="5">
+                            <widget class="QPushButton" name="Button_eq">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(51, 209, 122);</string>
+                                </property>
+                                <property name="text">
+                                    <string>=</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>Enter</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="8" column="0">
+                            <widget class="QPushButton" name="Button_sqrt">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>sqrt</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="7" column="0">
+                            <widget class="QPushButton" name="Button_log">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>log</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="4" column="4">
+                            <widget class="QPushButton" name="Button_pow">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>^</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="4" column="2">
+                            <widget class="QPushButton" name="Button_x">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>X</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="6" column="0">
+                            <widget class="QPushButton" name="Button_tan">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>tan</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="7" column="1">
+                            <widget class="QPushButton" name="Button_ln">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>ln</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="6" column="3">
+                            <widget class="QPushButton" name="Button_5">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                    <string>5</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>5</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="6" column="5">
+                            <widget class="QPushButton" name="Button_minus">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>-</string>
+                                </property>
+                                <property name="shortcut">
+                                    <string>-</string>
+                                </property>
+                                <attribute name="buttonGroup">
+                                    <string notr="true">Appended</string>
+                                </attribute>
+                            </widget>
+                        </item>
+                        <item row="2" column="0">
+                            <widget class="QPushButton" name="Button_xc">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>XC</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="2" column="4">
+                            <widget class="QPushButton" name="Button_backspace">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string/>
+                                </property>
+                                <property name="icon">
+                                    <iconset resource="rs.qrc">
+                                        <normaloff>:/backspace_icon.png</normaloff>:/backspace_icon.png
+                                    </iconset>
+                                </property>
+                                <property name="iconSize">
+                                    <size>
+                                        <width>32</width>
+                                        <height>32</height>
+                                    </size>
+                                </property>
+                                <property name="shortcut">
+                                    <string>Backspace</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="1" column="5">
+                            <widget class="QPushButton" name="Button_graph">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(246, 211, 45);</string>
+                                </property>
+                                <property name="text">
+                                    <string>graph</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="1" column="0" colspan="5">
+                            <layout class="QHBoxLayout" name="top_date">
+                                <item>
+                                    <widget class="QLabel" name="label_3">
+                                        <property name="sizePolicy">
+                                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="baseSize">
+                                            <size>
+                                                <width>0</width>
+                                                <height>0</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <family>Sans Serif</family>
+                                                <pointsize>16</pointsize>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Status:</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QLabel" name="label_status">
+                                        <property name="sizePolicy">
+                                            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <family>Sans Serif</family>
+                                                <pointsize>16</pointsize>
+                                                <italic>true</italic>
+                                            </font>
+                                        </property>
+                                        <property name="styleSheet">
+                                            <string notr="true">color: rgb(224, 27, 36);</string>
+                                        </property>
+                                        <property name="text">
+                                            <string>OK</string>
+                                        </property>
+                                        <property name="textFormat">
+                                            <enum>Qt::AutoText</enum>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                        </property>
+                                        <property name="indent">
+                                            <number>10</number>
+                                        </property>
+                                        <property name="textInteractionFlags">
+                                            <set>Qt::NoTextInteraction</set>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </item>
+                        <item row="2" column="1">
+                            <widget class="QPushButton" name="Button_xs">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sans Serif</family>
+                                        <pointsize>16</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>XS</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="2" column="2" colspan="2">
+                            <layout class="QHBoxLayout" name="horizontalLayout">
+                                <item>
+                                    <widget class="QLabel" name="label_4">
+                                        <property name="font">
+                                            <font>
+                                                <family>Sans Serif</family>
+                                                <pointsize>16</pointsize>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>X =</string>
+                                        </property>
+                                        <property name="indent">
+                                            <number>10</number>
+                                        </property>
+                                        <property name="textInteractionFlags">
+                                            <set>Qt::NoTextInteraction</set>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QLabel" name="label_x">
+                                        <property name="sizePolicy">
+                                            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <family>Sans Serif</family>
+                                                <pointsize>16</pointsize>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>nan</string>
+                                        </property>
+                                        <property name="textInteractionFlags">
+                                            <set>Qt::NoTextInteraction</set>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </item>
+                    </layout>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QMenuBar" name="menuBar">
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>720</width>
+                    <height>25</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>13</pointsize>
+                </font>
+            </property>
+            <widget class="QMenu" name="menuCalculator">
+                <property name="font">
+                    <font>
+                        <family>Sans Serif</family>
+                        <pointsize>13</pointsize>
+                    </font>
+                </property>
+                <property name="tearOffEnabled">
+                    <bool>false</bool>
+                </property>
+                <property name="title">
+                    <string>Calculator</string>
+                </property>
+                <addaction name="actionCredit"/>
+                <addaction name="actionDeposit"/>
+            </widget>
+            <addaction name="menuCalculator"/>
+        </widget>
+        <action name="actionCredit">
+            <property name="text">
+                <string>Credit</string>
+            </property>
+            <property name="font">
+                <font>
+                    <family>Sans Serif</family>
+                    <pointsize>13</pointsize>
+                </font>
+            </property>
+        </action>
+        <action name="actionDeposit">
+            <property name="text">
+                <string>Deposit</string>
+            </property>
+            <property name="font">
+                <font>
+                    <family>Sans Serif</family>
+                    <pointsize>13</pointsize>
+                </font>
+            </property>
+            <property name="shortcutContext">
+                <enum>Qt::WindowShortcut</enum>
+            </property>
+        </action>
+    </widget>
+    <layoutdefault spacing="6" margin="11"/>
+    <resources>
+        <include location="rs.qrc"/>
+    </resources>
+    <connections/>
+    <buttongroups>
+        <buttongroup name="Appended"/>
+    </buttongroups>
+</ui>

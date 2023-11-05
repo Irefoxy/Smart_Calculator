@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Graph</class>
+    <widget class="QWidget" name="Graph">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>603</width>
+                <height>599</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string/>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0" colspan="2">
+                <layout class="QVBoxLayout" name="verticalLayout">
+                    <item>
+                        <widget class="QLabel" name="Title">
+                            <property name="font">
+                                <font>
+                                    <pointsize>13</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>TextLabel</string>
+                            </property>
+                            <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QCustomPlot" name="plot" native="true">
+                            <property name="sizePolicy">
+                                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <layout class="QGridLayout" name="gridLayout_2">
+                            <item row="3" column="1">
+                                <widget class="QDoubleSpinBox" name="domain_max_spin">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Sans Serif</family>
+                                            <pointsize>13</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="decimals">
+                                        <number>3</number>
+                                    </property>
+                                    <property name="minimum">
+                                        <double>-49.999000000000002</double>
+                                    </property>
+                                    <property name="maximum">
+                                        <double>1000000.000000000000000</double>
+                                    </property>
+                                    <property name="value">
+                                        <double>50.000000000000000</double>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="4" column="1">
+                                <widget class="QDoubleSpinBox" name="domain_min_spin">
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Sans Serif</family>
+                                            <pointsize>13</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="decimals">
+                                        <number>3</number>
+                                    </property>
+                                    <property name="minimum">
+                                        <double>-1000000.000000000000000</double>
+                                    </property>
+                                    <property name="maximum">
+                                        <double>49.999000000000002</double>
+                                    </property>
+                                    <property name="value">
+                                        <double>-50.000000000000000</double>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="3" column="3">
+                                <widget class="QDoubleSpinBox" name="codomain_max_spin">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Sans Serif</family>
+                                            <pointsize>13</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="decimals">
+                                        <number>3</number>
+                                    </property>
+                                    <property name="minimum">
+                                        <double>-49.999000000000002</double>
+                                    </property>
+                                    <property name="maximum">
+                                        <double>1000000.000000000000000</double>
+                                    </property>
+                                    <property name="value">
+                                        <double>50.000000000000000</double>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="5" column="2" colspan="2">
+                                <widget class="QCheckBox" name="codomain_check">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Sans Serif</family>
+                                            <pointsize>13</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="layoutDirection">
+                                        <enum>Qt::RightToLeft</enum>
+                                    </property>
+                                    <property name="text">
+                                        <string>|[max]| = |[min]|</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="2" column="2" colspan="2">
+                                <widget class="QPushButton" name="pushButton_redraw">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Sans Serif</family>
+                                            <pointsize>13</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="layoutDirection">
+                                        <enum>Qt::RightToLeft</enum>
+                                    </property>
+                                    <property name="text">
+                                        <string>Redraw</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="5" column="0" colspan="2">
+                                <widget class="QCheckBox" name="domain_check">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Sans Serif</family>
+                                            <pointsize>13</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="layoutDirection">
+                                        <enum>Qt::RightToLeft</enum>
+                                    </property>
+                                    <property name="text">
+                                        <string>|[max]| = |[min]|</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="3" column="0">
+                                <widget class="QLabel" name="domain_max">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Sans Serif</family>
+                                            <pointsize>13</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>domain [max]</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="3" column="2">
+                                <widget class="QLabel" name="codomain_max">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Sans Serif</family>
+                                            <pointsize>13</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>codomain [max]</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="4" column="0">
+                                <widget class="QLabel" name="domain_min">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Sans Serif</family>
+                                            <pointsize>13</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>domain [min]</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="4" column="3">
+                                <widget class="QDoubleSpinBox" name="codomain_min_spin">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Sans Serif</family>
+                                            <pointsize>13</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="decimals">
+                                        <number>3</number>
+                                    </property>
+                                    <property name="minimum">
+                                        <double>-1000000.000000000000000</double>
+                                    </property>
+                                    <property name="maximum">
+                                        <double>49.999000000000002</double>
+                                    </property>
+                                    <property name="value">
+                                        <double>-50.000000000000000</double>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="4" column="2">
+                                <widget class="QLabel" name="codomain_min">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Sans Serif</family>
+                                            <pointsize>13</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>codomain [min]</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                    </property>
+                                </widget>
+                            </item>
+                        </layout>
+                    </item>
+                </layout>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>QCustomPlot</class>
+            <extends>QWidget</extends>
+            <header>qcustomplot.h</header>
+            <container>1</container>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>
